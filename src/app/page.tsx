@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -49,7 +49,7 @@ export default function Page() {
       defaultTextAnimation="entrance-slide"
       borderRadius="soft"
     >
-      <div id="nav" data-section="nav">
+      <div id="nav" data-section="nav" className="scroll-mt-24">
         <NavbarLayoutFloatingInline
           navItems={[
             { name: "Home", id: "home" },
@@ -99,17 +99,17 @@ export default function Page() {
               {
                 title: "Strong Security",
                 description: "Advanced measures to protect your data.",
-                imageSrc={assetMap.find(a => a.id === "service-strong-security")?.url}
+                imageSrc: assetMap.find(a => a.id === "service-strong-security")?.url
               },
               {
                 title: "Efficiency",
                 description: "Streamlined processes for better productivity.",
-                imageSrc={assetMap.find(a => a.id === "service-efficiency")?.url}
+                imageSrc: assetMap.find(a => a.id === "service-efficiency")?.url
               },
               {
                 title: "Innovation",
                 description: "Leading-edge technology to drive success.",
-                imageSrc={assetMap.find(a => a.id === "service-innovation")?.url}
+                imageSrc: assetMap.find(a => a.id === "service-innovation")?.url
               }
             ]}
           />
